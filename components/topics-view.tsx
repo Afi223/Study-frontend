@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Sparkles, FileText, ArrowRight, Upload } from "lucide-react"
-import type { Topic } from "@/app/page"
+import type { Topic } from "@/lib/types"
 import { useState } from "react"
 import { Loader2 } from "lucide-react"
 
