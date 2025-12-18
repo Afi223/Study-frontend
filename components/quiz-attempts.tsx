@@ -22,7 +22,7 @@ export function QuizAttempts({ pdfId }: QuizAttemptsProps) {
 
     useEffect(() => {
         fetch(
-            `${process.env.NEXT_PUBLIC_API_URL}/api/practice/attempts/${pdfId}`
+            `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/practice/attempts/${pdfId}`
         )
             .then((res) => res.json())
             .then((data) => setAttempts(data))

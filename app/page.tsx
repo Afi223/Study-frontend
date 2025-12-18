@@ -30,7 +30,7 @@ export default function Home() {
             formData.append("file", file)
 
             const res = await fetch(
-                `${process.env.NEXT_PUBLIC_API_URL}/api/pdf/upload`,
+                `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/pdf/upload`,
                 {
                     method: "POST",
                     body: formData,
@@ -58,7 +58,7 @@ export default function Home() {
 
         try {
             const res = await fetch(
-                `${process.env.NEXT_PUBLIC_API_URL}/api/practice/generate`,
+                `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/practice/generate`,
                 {
                     method: "POST",
                     headers: {
